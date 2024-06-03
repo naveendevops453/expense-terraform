@@ -5,6 +5,7 @@ module "frontend" {
   name          = var.components["frontend"]["name"]
   env           = var.env
   port_no       = var.components["frontend"]["port_no"]
+  vault_toekn   = var.vault_token
 }
 
 module "backend" {
@@ -14,6 +15,7 @@ module "backend" {
   name          = var.components["backend"]["name"]
   env           = var.env
   port_no       = var.components["backend"]["port_no"]
+  vault_toekn   = var.vault_token
 }
 
 module "mysql" {
@@ -22,4 +24,5 @@ module "mysql" {
   name          = var.components["mysql"]["name"]
   env           = var.env
   port_no       = var.components["mysql"]["port_no"]
+  vault_toekn   = var.vault_token
 }
