@@ -5,7 +5,7 @@ module "frontend" {
   name          = var.components["frontend"]["name"]
   env           = var.env
   port_no       = var.components["frontend"]["port_no"]
-  vault_toekn   = var.vault_token
+  vault_token   = var.vault_token
   SSH_PASSWORD  = var.SSH_PASSWORD
 }
 
